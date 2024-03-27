@@ -1,0 +1,75 @@
+* {
+}
+
+section {
+
+}
+
+body {
+    padding-bottom: 10px;
+}
+
+.blog-header {
+    border-bottom: thick double black;
+    padding: 15px;
+}
+
+.blog-header button {
+    float: right;
+    color: black;
+    padding: 12px;
+    margin-bottom: 100px;
+    width: 100px;
+}
+
+.blog-title {
+    border: solid black;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.blog-title h2 {
+    border-bottom: solid black;
+    padding-bottom: 20px;
+}
+
+.blog-title-2 {
+    border: solid black;
+    margin-bottom: 15px
+}
+
+.blog-title-2 h3 {
+    border-bottom: solid black;
+    padding-bottom: 20px;
+}
+
+.blog-title-3 {
+    border: solid black;
+    margin-bottom: 15px
+
+}
+
+.blog-title-3 h4 {
+    border-bottom: solid black;
+    padding-bottom: 20px;
+}
+
+.blog-title-4 {
+    border: solid black;
+    margin-bottom: 15px
+}
+
+.blog-title-4 h5 {
+    border-bottom: solid black;
+    padding-bottom: 20px;
+}
+
+footer {
+
+}
+
+footer h6 {
+    text-align: center;
+    border-top: thick double black;
+    padding-top: 15px;
+}

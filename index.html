@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="form/css" href="assets/css/form.css">
-    <link rel="stylesheet" type="styles/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Your Personal Blog!</title>
 
 </head>
 <main>
-    <header class="Header">
-
+    <header class="header">
+    
     </header>
 <body>
     <section class="left-header">
@@ -20,15 +20,27 @@
     </section>
     <section class="right-header">
         <h2>What's on Your Mind?</h2>
-         <div id="form-boxes">
-            <p>Username</p>
-            <p>Title</p>
-            <p>Content</p>
-            <p>Submit</p>
-        </div>
+         <form id="form-boxes">
+            <div>
+                <label for="username">Username</label>
+                <input id="username" type="text">
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input id="title" type="text">
+            </div>
+            <div>
+                <label for="content">Content</label>
+                <textarea id="content"></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+         </form>
     </section>
-    <script type="form/javascript" src="assets/js/form.js"></script>
-    <script type="logic/javascript" src="assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </main>
+<footer>
+    
+</footer>
 </html>
