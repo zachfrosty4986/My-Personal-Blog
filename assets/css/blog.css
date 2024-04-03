@@ -37,6 +37,17 @@ body {
     margin-bottom: 15px
 }
 
+.blog-title:hover {
+    border: solid 5px red;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+}
+
 .blog-title h2 {
     border-bottom: solid black;
     padding-bottom: 20px;
