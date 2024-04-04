@@ -1,48 +1,77 @@
 // ADD COMMENTS
-const userInput = document.getElementById("#username");
-const titleInput = document.getElementById("#title");
-const contextInput = document.getElementById("#content");
-const browserView = document.getElementById('#dark-light-mode');
-const submitPost = document.getElementById("#submit");
+const form = document.getElementById("form-boxes")
+const userInput = document.getElementById("username");
+const titleInput = document.getElementById("title");
+const contextInput = document.getElementById("content");
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body
+const submitPost = document.getElementById("submit");
 
-submitPost.addEventListener('click', function(event) {
-event.preventDefault();
+console.log(form)
 
-const posts = [];
+form.addEventListener('submit', function(event) {
+    console.log("Submitted sucsessfully!")
+    event.preventDefault();
 
-const blog = {
-    username: userInput.value.trim(),
-    title: titleInput.value.trim(),
-    context: contextInput.value.trim(),
-}
+    const posts = [];
 
-if (userInput.value === "") {
-    confirm("Please enter a Username")
-    return
-}
+    const blog = {
+        username: userInput.value.trim(),
+        title: titleInput.value.trim(),
+        context: contextInput.value.trim(),
+    }
 
-if (titleInput.value === "") {
-    confirm("Please enter a Title")
-    return
-}
+    if (userInput.value === "") {
+        confirm("Please enter a Username")
+        return
+    }
 
-if (contextInput.value === "") {
-    confirm("Please add your Context")
-    return
-}
+    if (titleInput.value === "") {
+        confirm("Please enter a Title")
+        return
+    }
 
-posts.push(blog)
-let localBlog = JSON.stringify(posts)
-localStorage.setItem('storedBlog', localBlog)
-console.log(blog)
-console.log(localBlog)
+    if (contextInput.value === "") {
+        confirm("Please add your Context")
+        return
+    }
+
+    posts.push(blog)
+    let localBlog = JSON.stringify(posts)
+    localStorage.setItem('storedBlog', localBlog)
+    console.log(blog)
+    console.log(localBlog)
+    document.location.replace('./blog.html')
 });
 
-let darkLightMode = localStorage.getItem("dark-light-mode")
-const enableDarkMode = () => {
-
+    modeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    // Save user preference to localStorage
+    localStorage.setItem('mode', body.classList.contains('dark-mode') ? 'dark' : 'light');
+});
+        
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode === 'dark') {
+    body.classList.add('dark-mode')
 }
-
-if (dark-light-mode === 'enabled') {
-    
-}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ 

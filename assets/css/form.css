@@ -3,13 +3,43 @@
     padding: 20px;
     margin: 5px;
     background-color:bisque;
+    display: flex;
+    justify-content: end;
 }
 
 .header button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 1200px;
+    align-items: end;
+}
+
+.dark-mode header {
+    background-color: darkslateblue;
+}
+
+.light-mode header {
+    background-color:bisque;
+}
+
+.dark-mode body {
+ background-color: maroon;
+ color:blanchedalmond;
+}
+
+.light-mode body {
+    background-color:bisque;
+    color: black
+}
+
+.dark-mode footer {
+    background-color: darkslateblue;
+    color:bisque
+}
+
+.light-mode footer {
+    background-color:bisque;
+    color: black;
 }
 
 .left-header {
@@ -41,8 +71,8 @@
     justify-content: center;
 }
 
-#submit button {
-    max width: 200px;
+#submit {
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,9 +86,9 @@
     text-align: top;
     /* text-align: start; */
     display: inline-block;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     padding: 15px;
 }
 
@@ -75,6 +105,7 @@
 
 #form-boxes input {
     font-size: 20px;
+    width: 100%;
 }
 
 #form-boxes textarea {
