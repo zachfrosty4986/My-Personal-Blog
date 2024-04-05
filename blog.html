@@ -8,43 +8,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Blog Page</title>
 </head>
-<main>
+<body>
 <header class="blog-header">
     <h1>My first Blog</h1>
         <div id="back-btn">
-        <button id="backButton">Go Back</button>
+        <!-- <button id="backButton">Go Back</button> -->
+        <button>
+        <a href="./index.html" class="back-btn">&larr; Go back.</a>
+        </button>
         <button id="darkLight">Toggle Dark/Light Mode</button>
         </div>
 </header>
-<body>
-<section class="blog-title">
-    <h2>Blog title</h2>
-        <div id="title-content">
-        <p>First title</p>
-        </div>
-</section>
-<section class="blog-title-2">
-    <h3>Title 2</h3>
-        <div id="title-content">
-        <p>Second Title</p>
-        </div>
-</section>
-
-<section class="blog-title-3">
-    <h4>Title 3</h4>
-        <div id="title-content">
-        <p>Third Title</p>
-        </div>
-</section>
-<section class="blog-title-4">
-    <h5>Here is the Title</h5>
-        <div id="title-content">
-        <p>Here is the Content</p>
-        </div>
-</section>
+<main>
+    <div class="container"></div>
 <script src="./assets/js/blog.js"></script>
 <script src="./assets/js/logic.js"></script>
-</body>
+</main>
 <footer>
     <h6>Made with Love by Zach Frost!</h6>
         <div id="contact-me">
@@ -53,5 +32,5 @@
             <li>Email: </li>
         </div>
 </footer>
-</main>
+</body>
 </html>

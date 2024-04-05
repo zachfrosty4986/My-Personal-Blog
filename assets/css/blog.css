@@ -1,13 +1,35 @@
-.dark-mode .blog-header:hover {
 
+/* Dark/Light mode configuration */
+.dark-mode header {
+    background-color:darkslateblue ;
+    transition: 1s;
 }
 
-.light-mode .blog-header:hover  {
-
+.light-mode header {
+    background-color:bisque;
+    transition: 1s;
 }
 
-.dark-mode .blog-title:hover {
-    
+.dark-mode main {
+    background-color:purple;
+    color:whitesmoke;
+    transition: 1s;
+}
+
+.light-mode main {
+    background-color:bisque;
+    color: black;
+    transition: 1s;
+}
+
+.dark-mode footer {
+    background-color:darkslateblue ;
+    transition: 1s;
+}
+
+.light-mode footer {
+    background-color:bisque;
+    transition: 1s;
 }
 
 body {
@@ -20,12 +42,6 @@ body {
     justify-content: space-between;
     border-bottom: thick double black;
     padding: 15px;
-}
-
-.blog-header:hover {
-    border-bottom: thick double red;
-    background-color: beige;
-    transition: 1s;
 }
 
 .blog-header button {
@@ -41,6 +57,11 @@ body {
     color: whitesmoke;
     opacity: 1;
     transition: border 0.5s;
+}
+
+.back-btn {
+    text-decoration: none;
+    color:whitesmoke;
 }
 
 .blog-header button:hover {
@@ -66,7 +87,6 @@ body {
     border: solid 5px lightcoral;
     background-color:lightyellow;
     transition: border 1s;
-    transition: background-color 1.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,8 +113,7 @@ body {
 .blog-title-2:hover {
     border: solid 5px lightcoral;
     background-color:lightyellow;
-    transition: border 1s;
-    transition: background-color 1.5s;
+    transition: border 0.5s;
 }
 
 .blog-title-2 h3 {
@@ -115,8 +134,7 @@ body {
 .blog-title-3:hover {
     border: solid 5px lightcoral;
     background-color:lightyellow;
-    transition: border 1s;
-    transition: background-color 1.5s;
+    transition: border 0.5s;
 }
 
 .blog-title-3 h4 {
@@ -136,8 +154,7 @@ body {
 .blog-title-4:hover {
     border: solid 5px lightcoral;
     background-color:lightyellow;
-    transition: border 1s;
-    transition: background-color 1.5s;
+    transition: border 0.5s;
 }
 
 .blog-title-4 h5 {
@@ -147,7 +164,7 @@ body {
 
 footer:hover {
     background-color: beige;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 footer h6 {

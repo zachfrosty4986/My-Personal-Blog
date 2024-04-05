@@ -21,6 +21,11 @@
     transition: 1s;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .dark-mode header {
     background-color: darkslateblue;
     transition: 1s;
@@ -70,11 +75,9 @@
 .left-header {
     border-right: thick double black;
     text-align: left;
-    float: left;
     display: flex;
-    justify-content: flex-start;
-    padding: 225px;
-    height: 150px;
+    justify-content: center;
+    align-items:center;
     background-color: lightgoldenrodyellow;
 }
 
@@ -85,10 +88,12 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 250px;
-    padding: 175px;
-    margin-bottom: 20px;
     background-color:lightgoldenrodyellow;
+}
+
+main section {
+    padding: 20px;
+    flex: 1 0 0;
 }
 
 .right-header h2 {
@@ -170,10 +175,12 @@
 }
 
 #content {
-    padding-right: 100px;
-    padding-bottom: 50px;
-    max-height: 200px;
-    max-width: 200px;
+    /* padding-right: 100px;
+    padding-bottom: 50px; */
+    min-height: 200px;
+    width: 100%;
+    /* max-width: 200px; */
+    resize: vertical;
 }
 
 #content:hover {
@@ -182,21 +189,11 @@
     transition: 0.5s;
 }
 
-#form-boxes textarea {
-    width: 150px;
-}
-
-#form-boxes input {
-    width: 150px;
-}
-
 footer {
-    padding: 0px;
     font-size: 20px;
     display: flex;
     justify-content: center;
-    margin: -20px;
-    height: 100px;
+    min-height: 100px;
     border-top: thick double black;
     background-color:bisque;
 }
